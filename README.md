@@ -1,31 +1,37 @@
+# Caesarova šifra (část 1/2)
 
-> Otevřít tuto stránku v aplikaci [https://smutnyjan.github.io/pxt-caesar-cipher-extension/](https://smutnyjan.github.io/pxt-caesar-cipher-extension/)
+## Namespace
+```
+cipher
+```
+## Popis
+Rozšíření poskytuje čtyři metody pro zašifrování a dešifrování textu/znaku pomocí Caesarovy šifry s libovolným posunem. Z důvodu jednoduššího překladu rozšíření pracuje pouze s anglickou abecedou, je ale schopno přeložit diakritiku na znak bez diakritiky.
 
-## Použít jako rozšíření
+ 
+## Metody
+### Zašifruj text %text caesarovou šifrou s posunem %key
+- Zašiftuje zadaný text caesarovou šifrou s libovolným posunem
+- Parametry:
+    - text k zašifrování (text)
+    - klíč (posun) - může být kladný i záporný (číslo)
+- Návratová hodnota: zašifrovaný text (text)
 
-Toto úložiště lze přidat jako **rozšíření** v aplikaci MakeCode.
+### Dešifruj text %text caesarovou šifrou s posunem %key
+- Dešiftuje zadaný text caesarovou šifrou s libovolným posunem
+- Parametry:
+    - text k dešifrování (text)
+    - klíč (posun) - může být kladný i záporný (číslo)
+- Návratová hodnota: dešifrovaný text (text)
 
-* otevřít [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* klikněte na možnost **Nový projekt**
-* klikněte na možnost **Rozšíření** v nabídce s ozubeným kolem
-* vyhledat **https://github.com/smutnyjan/pxt-caesar-cipher-extension** a importovat
-
-## Upravit tento projekt ![Odznak stavu sestavení](https://github.com/smutnyjan/pxt-caesar-cipher-extension/workflows/MakeCode/badge.svg)
-
-Slouží k úpravě tohoto úložiště v aplikaci MakeCode.
-
-* otevřít [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* klikněte na možnost **Import** a poté na **Import adresy URL**
-* vložte **https://github.com/smutnyjan/pxt-caesar-cipher-extension** a klikněte na možnost import
-
-## Náhled bloků
-
-Tento obrázek znázorňuje kód z Bloků od posledního potvrzení v hlavní verzi.
-Tento obrázek se může aktualizovat až za několik minut.
-
-![Vykreslený náhled bloků](https://github.com/smutnyjan/pxt-caesar-cipher-extension/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (slouží k vyhledávání, vykreslování)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+### Zašifruj znak %character caesarovou šifrou s posunem %key
+- Zašiftuje zadaný znak caesarovou šifrou s libovolným posunem
+- Parametry:
+    - text k zašifrování (text)
+    - klíč (posun) - může být kladný i záporný (číslo)
+- Návratová hodnota: zašifrovaný text (text)
+#### Dešifruj znak %character caesarovou šifrou s posunem %key
+- Dešiftuje zadaný znak caesarovou šifrou s libovolným posunem
+- Parametry:
+    - text k dešifrování (text)
+    - klíč (posun) - může být kladný i záporný (číslo)
+- Návratová hodnota: dešifrovaný text (text)
