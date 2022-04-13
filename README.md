@@ -1,4 +1,4 @@
-# Caesarova šifra (část 1/2)
+# Caesarova šifra
 
 ## Namespace
 ```
